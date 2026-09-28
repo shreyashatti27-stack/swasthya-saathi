@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@rollup/rollup-win32-x64-msvc": "^4.34.8",
     "caniuse-lite": "^1.0.30001812",
     "clsx": "^2.1.1",
     "decimal.js-light": "^2.5.1",
