@@ -1,0 +1,18 @@
+{
+  "name": "swasthya-saathi",
+  "version": "1.0.0",
+  "description": "Healthcare follow-up and adherence tracker for ASHA workers and PHC officers",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "seed": "npm run seed --prefix server",
+    "build": "npm run build --prefix client",
+    "start": "node server/src/server.js",
+    "test:risk": "npm test --prefix server",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
